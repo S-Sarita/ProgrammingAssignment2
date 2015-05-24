@@ -1,8 +1,8 @@
 ## These codes help cache potentially time consuming computations
-##These codes are split into two steps: cache function and 
+## These codes are split into two steps: cache function and 
 ## the inverse of a matrix computation function
 
-## step one: this function creates an object of a matrix that
+## Step one: Cache Function. This function creates an object of a matrix that
 ## cashes the inverse which is a form of a special "matrix"
 makeCacheMatrix <- function(x = matrix()) {
   makeCacheMatrix <- function(mtx = matrix()) {
@@ -19,9 +19,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Step two: The inverse of the special "matrix" is then computed obtained in
-##step one as returned by the makeCacheMatrix function. cacheSolve will
-## return the inverse of the matrix in the event that the matrix is
+## Step two: Inverse Matrix Computation Function. The inverse of the special "matrix" 
+## is then computed obtained in step one as returned by the makeCacheMatrix function. cacheSolve 
+## will return the inverse of the matrix in the event that the matrix is
 ## unchanged
 
 cacheSolve <- function(x, ...) {
